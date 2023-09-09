@@ -1,0 +1,67 @@
+/* General styling */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Aplico font:inherit y margin:0 a estos elementos para asegurarme su reseteo (también por si uso Bootstrap) */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  margin: 0;
+}
+
+.button-primary {
+  background-color: $darkPurple;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5em 1.25em;
+  text-decoration: none;
+  &:hover {
+    background-color: $darkBlue;
+    color: #fff;
+  }
+}
+
+.text-orange {
+  color: $darkOrange;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.wrapper {
+  /* Agrego un wrapper de max-width 1600px para lidiar con el stretching en dispositivos grandes */
+  margin: 0 auto;
+  max-width: 1600px;
+}

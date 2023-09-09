@@ -1,0 +1,34 @@
+.main {
+  padding-top: 113px;
+  .main__hero {
+    background-image: url("./../media/background-lines-xl.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0.75rem 0 0.75rem;
+    @media only screen and (min-width: 992px) {
+      flex-direction: row;
+    }
+    .hero__content-header {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      p {
+        color: $darkPurple;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 70px;
+      }
+      .button-primary {
+        margin: 1rem 0 0 0;
+        max-width: fit-content;
+      }
+    }
+    .hero__content-image {
+      img {
+        max-width: 800px;
+        width: 100%;
+      }
+    }
+  }
+}
