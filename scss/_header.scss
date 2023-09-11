@@ -1,5 +1,6 @@
 .header {
   nav {
+    background-color: #fff;
     padding: 1.25rem 0.75rem;
     @media only screen and (min-width: 1200px) {
       padding: 1.25rem 2rem;
@@ -36,19 +37,20 @@
             @media only screen and (min-width: 1200px) {
               margin: 0 0.75rem;
             }
-            &:first-child,
-            &:last-child {
-              align-items: center;
-              border-radius: 0.5rem;
-              display: flex;
-            }
-            &:first-child {
+            &:hover {
               background-color: $lightGray;
               color: #000;
             }
             &:last-child {
+              align-items: center;
+              border-radius: 0.5rem;
               color: #fff;
+              display: flex;
               padding: 0.5em 1.25em;
+              &:hover {
+                background-color: $darkBlue;
+                color: #fff;
+              }
             }
           }
         }

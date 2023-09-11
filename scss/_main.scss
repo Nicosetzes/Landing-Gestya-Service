@@ -1,23 +1,38 @@
 .main {
   padding-top: 113px;
   .main__hero {
+    align-items: center;
     background-image: url("./../media/background-lines-xl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem 0.75rem 0 0.75rem;
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 768px) {
       flex-direction: row;
     }
     .hero__content-header {
+      align-items: center;
       justify-content: center;
       display: flex;
       flex-direction: column;
+      max-width: 550px;
       p {
         color: $darkPurple;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 700;
-        line-height: 70px;
+        line-height: 3rem;
+        @media only screen and (min-width: 992px) {
+          font-size: 4rem;
+          line-height: 70px;
+        }
+        br {
+          display: none;
+          @media only screen and (min-width: 768px) {
+            display: block;
+          }
+        }
       }
       .button-primary {
         margin: 1rem 0 0 0;
@@ -25,10 +40,216 @@
       }
     }
     .hero__content-image {
+      @media only screen and (min-width: 768px) {
+        flex-basis: 50%;
+      }
       img {
         max-width: 800px;
         width: 100%;
       }
+    }
+  }
+  .main__M1 {
+    padding: 0 0.75rem;
+    .M1__article-quantity {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 5rem 0.75rem 0 0.75rem;
+      @media only screen and (min-width: 992px) {
+        flex-wrap: nowrap;
+      }
+      @media only screen and (min-width: 1200px) {
+        justify-content: space-evenly;
+      }
+      .quantity__info {
+        margin: 3rem 0 0 0;
+        @media only screen and (min-width: 992px) {
+          flex-basis: 50%;
+          margin: 0;
+        }
+        .quantity__info-block {
+          border-top: $lightOrange 1px solid;
+          display: flex;
+          padding: 1rem 0;
+          &:last-of-type {
+            border-bottom: $lightOrange 1px solid;
+          }
+          img {
+            align-self: center;
+            width: 50px;
+          }
+          & > div {
+            padding: 0 0.25rem 0 1.25rem;
+            h3 {
+              color: $darkPurple;
+              font-size: 1.5rem;
+              font-weight: 700;
+              margin: 0 0 0.5rem 0;
+            }
+            p {
+              color: $darkGrey;
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+    .M1__article-location {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 5rem 0.75rem 0 0.75rem;
+      @media only screen and (min-width: 992px) {
+        flex-wrap: nowrap;
+      }
+      @media only screen and (min-width: 1200px) {
+        justify-content: space-evenly;
+      }
+      .location__header {
+        @media only screen and (min-width: 992px) {
+          flex-basis: 50%;
+        }
+      }
+      .location__info {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        @media only screen and (min-width: 992px) {
+          flex-basis: 50%;
+        }
+      }
+    }
+    .M1__article-technology {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 5rem 0.75rem 0 0.75rem;
+      @media only screen and (min-width: 992px) {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+      }
+      .technology__header {
+        @media only screen and (min-width: 992px) {
+          flex-basis: 25%;
+        }
+        h2 {
+          max-width: none;
+        }
+      }
+      .technology__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media only screen and (min-width: 992px) {
+          flex-basis: 30%;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+        a {
+          align-items: center;
+          color: $darkPurple;
+          display: flex;
+          font-size: 1.25rem;
+          font-weight: 700;
+          justify-content: space-between;
+          margin: 1rem 0 0 0;
+          text-decoration: none;
+          width: 150px;
+          &:hover {
+            color: $lightOrange;
+            svg {
+              fill: $lightOrange;
+            }
+          }
+          svg {
+            fill: $darkPurple;
+          }
+        }
+      }
+      .technology__image {
+        display: flex;
+        justify-content: center;
+        @media only screen and (min-width: 992px) {
+          flex-basis: 45%;
+        }
+      }
+    }
+    .M1__article-control {
+      padding: 5rem 0.75rem;
+      .control__header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media only screen and (min-width: 992px) {
+          align-items: center;
+          flex-direction: row;
+        }
+        h2 {
+          color: $darkPurple;
+          font-size: 34px;
+          font-weight: 700;
+        }
+        & > img {
+          margin: 1rem 0;
+          @media only screen and (min-width: 992px) {
+            align-self: center;
+            height: 100%;
+            transform: rotate(90deg);
+            width: 100px;
+          }
+        }
+        & > p {
+          color: $darkGrey;
+          font-size: 1.5rem;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+  /* Como todos los headers de los articles tienen los mismos estilos, los agrupo acá para no repetir código */
+  .quantity__header,
+  .location__header,
+  .technology__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 475px;
+    @media only screen and (min-width: 768px) {
+      align-items: flex-start;
+      flex-basis: 50%;
+      margin: 0 1rem 0 0;
+      max-width: 500px;
+    }
+    h2 {
+      color: $darkPurple;
+      font-size: 34px;
+      font-weight: 700;
+      max-width: 360px;
+    }
+    p {
+      color: $darkGrey;
+      font-size: 1.5rem;
+      line-height: 34px;
+      margin: 1rem 0;
+    }
+    ul {
+      list-style-image: url("./../media/bullet.svg");
+      margin: 0 auto 0 0;
+      padding: 0 0 0 1rem;
+      li {
+        color: $darkPurple;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 34px;
+      }
+    }
+    a {
+      margin: 1rem 0;
     }
   }
 }
