@@ -696,6 +696,7 @@ select {
 .main .main__M2 .M2__content-info > img {
   margin: 0 auto;
   max-width: 600px;
+  width: 100%;
 }
 @media only screen and (min-width: 992px) {
   .main .main__M2 .M2__content-info > img {
@@ -780,11 +781,16 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0 0 -50px;
+  margin: 0 auto;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 2rem 0;
+}
+@media only screen and (min-width: 576px) {
+  .main .main__M3 .M3__article-you .you__content-image.mobile .image_block {
+    margin: 0 0 0 -50px;
+  }
 }
 .main .main__M3 .M3__article-you .you__content-image.mobile .image_block p {
   color: #312780;
@@ -803,9 +809,13 @@ select {
   display: flex;
   height: 20px;
   margin: 0 0 1rem 0;
-  min-width: 300px;
   position: relative;
   width: 75%;
+}
+@media only screen and (min-width: 576px) {
+  .main .main__M3 .M3__article-you .you__content-image.mobile .image_block .bar {
+    min-width: 300px;
+  }
 }
 .main .main__M3 .M3__article-you .you__content-image.mobile .image_block .bar:last-of-type {
   margin: 0;
@@ -989,9 +999,9 @@ select {
   }
 }
 .main .main__M3 .M3__article-we .we__content-main .main__block {
-  margin: 0 1rem;
   padding: 1rem 0;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
 }
 @media only screen and (min-width: 992px) {
   .main .main__M3 .M3__article-we .we__content-main .main__block {
