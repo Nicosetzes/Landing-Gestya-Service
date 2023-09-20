@@ -1,0 +1,19 @@
+footer {
+  align-items: center;
+  background-color: $lightBlue;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .footer__social {
+    display: flex;
+    margin: 1rem 0 0 0;
+    img {
+      margin: 0 0.25rem;
+    }
+  }
+}
