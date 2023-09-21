@@ -162,13 +162,14 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 1em;
   }
   #carousel .carousel-item {
-    margin-right: 0;
+    display: block;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%;
-    display: block;
+    margin-right: 0;
   }
 }
 #carousel .card {
