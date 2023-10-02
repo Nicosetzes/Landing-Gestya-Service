@@ -1,0 +1,126 @@
+.gracias {
+  padding-top: 113px;
+  .gracias__hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0.75rem;
+    .hero__content-header {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      text-align: center;
+      h1 {
+        color: $darkPurple;
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      p {
+        color: $darkGrey;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin: 1.25rem 0 1.5rem 0;
+      }
+      .button-primary {
+        border-radius: 0.25rem;
+      }
+    }
+  }
+  .gracias__M1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.75rem;
+    @media only screen and (min-width: 992px) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .M1__content-header {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      h2 {
+        color: $darkPurple;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        color: $darkGrey;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin: 1.25rem 0 1.5rem 0;
+        span {
+          font-weight: 700;
+        }
+      }
+      .button-primary {
+        border-radius: 0.25rem;
+        max-width: fit-content;
+      }
+    }
+    .M1__content-image {
+      max-width: 500px;
+      @media only screen and (min-width: 992px) {
+        max-width: 750px;
+      }
+    }
+  }
+  .gracias__M2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0.75rem;
+    .M2__content-main {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      max-width: 750px;
+      @media only screen and (min-width: 992px) {
+        max-width: 1000px;
+      }
+      p {
+        color: $darkPurple;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      .main__block {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .picture {
+          @media only screen and (min-width: 992px) {
+            margin: 0 1rem 0 2rem;
+          }
+        }
+        .line {
+          margin: 2rem 0 2.75rem 0;
+          max-width: 300px;
+          width: 100%;
+        }
+        & > p {
+          margin: 2rem 0 0 0;
+          max-width: 190px;
+          @media only screen and (min-width: 992px) {
+            max-width: none;
+          }
+        }
+        @media only screen and (min-width: 992px) {
+          flex-direction: row;
+        }
+      }
+    }
+    .M2__content-brands {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 3rem 0 0 0;
+      img {
+        margin: 1rem;
+        max-width: 175px;
+      }
+    }
+  }
+}

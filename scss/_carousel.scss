@@ -1,11 +1,11 @@
 #carousel {
-  margin: 7rem auto 0 auto;
+  margin: 7.5rem auto 0 auto;
   max-width: 500px;
   @media only screen and (min-width: 992px) {
     max-width: none;
     .carousel-inner {
       display: flex;
-      padding: 1em;
+      padding: 1em 0;
     }
     .carousel-item {
       display: block;
@@ -15,7 +15,10 @@
   }
   .card {
     border: 0;
-    margin: 0 0.5rem;
+    margin: 0 0.75rem 0 0;
+    // &:last-of-type {
+    //   margin: 0;
+    // }
     .card-title {
       background-color: $lightBlue;
       color: #fff;
