@@ -113,6 +113,14 @@
         justify-content: space-evenly;
       }
       .location__content-header {
+        padding: 0 0 2rem 0;
+        ul {
+          margin: 1rem 0 2rem 0;
+        }
+        .button-primary {
+          margin: 0 0 0 auto;
+          max-width: fit-content;
+        }
         @media only screen and (min-width: 992px) {
           flex-basis: 50%;
         }
@@ -195,7 +203,8 @@
           flex-direction: row;
           justify-content: space-between;
           margin: 0 auto;
-          max-width: 1200px;
+          // max-width: 1200px;
+          width: 100%;
         }
         h2 {
           color: $darkPurple;
@@ -231,7 +240,6 @@
   .quantity__content-header,
   .location__content-header,
   .technology__content-header {
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,6 +293,7 @@
     .M2__content-header {
       @media only screen and (min-width: 992px) {
         flex-basis: 50%;
+        margin: 0 1rem 0 0;
         max-width: 700px;
       }
       & > img {
@@ -312,10 +321,7 @@
       & > div {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        @media only screen and (min-width: 992px) {
-          justify-content: start;
-        }
+        justify-content: end;
         img {
           max-width: 125px;
           width: 100%;
@@ -328,6 +334,8 @@
       @media only screen and (min-width: 992px) {
         align-items: center;
         flex-basis: 50%;
+        justify-content: center;
+        margin: 0 0 0 1rem;
         max-width: 800px;
       }
       .info__container {
@@ -644,7 +652,6 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    margin: 7.5rem 0 0 0;
     @media only screen and (min-width: 992px) {
       flex-flow: row nowrap;
     }
@@ -690,13 +697,19 @@
   }
   .main__M5 {
     padding: 7.5rem 0.75rem;
+    @media only screen and (min-width: 1200px) {
+      padding: 7.5rem 0;
+    }
     .M5__content-header {
       align-items: center;
       display: flex;
       flex-direction: column;
+      margin: 0 auto;
       @media only screen and (min-width: 1200px) {
         flex-direction: row;
         justify-content: center;
+        max-width: 1200px;
+        padding: 0 2.75rem;
       }
       .header__text {
         max-width: 375px;
@@ -706,7 +719,8 @@
         }
         @media only screen and (min-width: 1200px) {
           flex-basis: 45%;
-          margin: 0 0 0 3rem;
+          // margin: 0 0 0 3rem;
+          padding: 0;
         }
         h2 {
           color: $darkPurple;
@@ -732,6 +746,7 @@
           display: none;
           @media only screen and (min-width: 1200px) {
             display: block;
+            max-width: 600px;
           }
         }
       }
@@ -749,7 +764,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: fit-content;
         @media only screen and (min-width: 768px) {
           flex-direction: row;
         }
@@ -787,10 +801,14 @@
         }
         .container__card {
           box-shadow: 0px 4px 10px 0px rgba(164, 162, 162, 0.25);
-          height: 345px;
           margin: 0 0 1rem 0;
-          max-width: 250px;
+          max-width: 400px;
           padding: 2rem;
+          width: 100%;
+          @media only screen and (min-width: 1200px) {
+            height: 342px;
+            max-width: 250px;
+          }
           h3 {
             color: $darkPurple;
             font-size: 1.5rem;
@@ -825,26 +843,31 @@
       @media only screen and (min-width: 1200px) {
         background-image: url("./../media/background-tires-1600.png");
       }
-      h2,
-      p {
-        max-width: 475px;
-      }
-      h2 {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: normal;
-      }
-      p {
-        font-size: 1.75rem;
-        font-weight: 500;
-        line-height: 34px;
-        margin: 1.5rem 0 3rem 0;
-      }
-      .button-primary {
-        background-color: $lightOrange;
-        max-width: fit-content;
-        &:hover {
-          background-color: $lightBlue;
+      .header__block {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        // h2,
+        // p {
+        //   max-width: 475px;
+        // }
+        h2 {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: normal;
+        }
+        p {
+          font-size: 1.75rem;
+          font-weight: 500;
+          line-height: 34px;
+          margin: 1.5rem 0 3rem 0;
+        }
+        .button-primary {
+          background-color: $lightOrange;
+          max-width: fit-content;
+          &:hover {
+            background-color: $lightBlue;
+          }
         }
       }
     }
@@ -858,7 +881,7 @@
       display: flex;
       flex-direction: column;
       min-height: 950px;
-      padding: 2.5rem 0.75rem;
+      padding: 5rem 0.75rem;
       @media only screen and (min-width: 500px) {
         background-image: url("./../media/background-devices-800.png");
         min-height: 800px;
@@ -997,7 +1020,7 @@
       border-radius: 0.75rem 0.75rem 0 0;
       display: flex;
       flex-direction: column;
-      padding: 2.5rem 0 0 0;
+      padding: 3rem 0 0 0;
       width: 100%;
       @media only screen and (min-width: 992px) {
         align-items: start;
@@ -1011,7 +1034,7 @@
         @media only screen and (min-width: 992px) {
           flex-direction: row;
           margin: 0 0 1rem 0;
-          padding: 0 1.25rem;
+          padding: 0 3rem;
           width: 100%;
         }
         &:nth-of-type(1),
@@ -1070,7 +1093,7 @@
           border-radius: 0.25rem;
           color: #fff;
           font-weight: 700;
-          margin: 0 auto;
+          margin: 0 auto 2.5rem 0;
           max-width: 375px;
           padding: 0.5em 1.75em;
           width: 100%;
@@ -1094,7 +1117,7 @@
         width: 100%;
         @media only screen and (min-width: 992px) {
           flex-direction: row;
-          padding: 1rem 0.75rem;
+          padding: 0 0.75rem;
         }
         p {
           &:first-of-type {
@@ -1102,7 +1125,6 @@
           }
         }
         & > svg {
-          margin: 0 0 0 3rem;
           transform: rotate(90deg);
           @media only screen and (min-width: 992px) {
             margin: 0 1rem;
