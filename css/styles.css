@@ -414,7 +414,7 @@ select {
   padding: 0 0 2rem 0;
 }
 .main .main__M1 .M1__article-location .location__content-header .button-primary {
-  margin: 0 0 0 auto;
+  margin: 0 auto 0 0;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -571,7 +571,6 @@ select {
   font-size: 34px;
   font-weight: 700;
   line-height: normal;
-  width: 260px;
 }
 .main .main__M1 .M1__article-control .control__content-header > img {
   margin: 1rem 0;
@@ -598,7 +597,7 @@ select {
 }
 @media only screen and (min-width: 1200px) {
   .main .main__M1 .M1__article-control .control__content-header > p {
-    max-width: 725px;
+    max-width: 900px;
   }
 }
 .main .quantity__content-header,
@@ -731,11 +730,12 @@ select {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .main .main__M2 .M2__content-header > div img {
+  margin: 0 0.5rem 0 0;
   max-width: 125px;
   width: 100%;
 }
@@ -1182,6 +1182,7 @@ select {
   }
 }
 .main .main__M4 {
+  background-color: #ec8c1f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1192,6 +1193,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 5rem 0.75rem;
 }
 @media only screen and (min-width: 992px) {
   .main .main__M4 {
@@ -1199,13 +1201,13 @@ select {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+    min-height: 600px;
   }
 }
 .main .main__M4 .M4__content-info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ec8c1f;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1217,12 +1219,13 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5rem 0.75rem;
+  margin: 0 0 5rem 0;
 }
 @media only screen and (min-width: 992px) {
   .main .main__M4 .M4__content-info {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
+    margin: 0 2.5rem 0 0;
   }
 }
 .main .main__M4 .M4__content-info .info__container {
@@ -1255,7 +1258,6 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #333;
   color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1273,13 +1275,18 @@ select {
   }
 }
 .main .main__M4 .M4__content-video iframe {
-  height: 375px;
+  height: auto;
   max-width: 530px;
   width: 100%;
 }
+@media only screen and (min-width: 400px) {
+  .main .main__M4 .M4__content-video iframe {
+    height: 350px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .main .main__M4 .M4__content-video iframe {
-    height: 90%;
+    height: 450px;
     max-width: 700px;
   }
 }
@@ -1303,7 +1310,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 7.5rem auto;
 }
 @media only screen and (min-width: 1200px) {
   .main .main__M5 .M5__content-header {
@@ -1531,7 +1538,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("./../media/background-devices-500.png");
+  background-image: url("./../media/background-devices-300.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1543,13 +1550,17 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 950px;
+  min-height: 1150px;
   padding: 5rem 0.75rem;
+}
+@media only screen and (min-width: 400px) {
+  .main .main__M6 .M6__content-main {
+    min-height: 800px;
+  }
 }
 @media only screen and (min-width: 500px) {
   .main .main__M6 .M6__content-main {
-    background-image: url("./../media/background-devices-800.png");
-    min-height: 800px;
+    background-image: url("./../media/background-devices-500.png");
   }
 }
 @media only screen and (min-width: 800px) {
