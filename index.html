@@ -606,19 +606,19 @@
             fill="#EC8C1F"
           />
         </svg>
-        <form action="">
+        <form action="email.php" method="post">
           <div class="form__row">
-            <label>Nombre*<input type="text" /></label>
-            <label>Apellido<input type="text" /></label>
+            <label>Nombre*<input name="user_first_name" type="text" /></label>
+            <label>Apellido<input name="user_last_name" type="text" /></label>
           </div>
           <div class="form__row">
-            <label>Teléfono*<input type="text" /></label>
-            <label>Email*<input type="text" /></label>
+            <label>Teléfono*<input name="user_cellphone" type="text" /></label>
+            <label>Email*<input name="user_email" type="text" /></label>
           </div>
           <div class="form__row">
             <label>
               Elegir zona*
-              <select id="provincia" name="provincia">
+              <select id="provincia" name="user_provincia">
                 <option value="Buenos Aires">Buenos Aires</option>
                 <option value="C.A.B.A">C.A.B.A</option>
                 <option value="Catamarca">Catamarca</option>
@@ -645,9 +645,9 @@
                 <option value="Tucuman">Tucumán</option>
               </select>
             </label>
-            <label>Mensaje*<input type="text" /></label>
+            <label>Mensaje*<input name="user_message" type="text" /></label>
           </div>
-          <div class="form__row"><button>ENVIAR</button></div>
+          <div class="form__row"><button type="submit">ENVIAR</button></div>
           <div class="form__footer">
             <p>Asesoramiento</p>
             <svg
