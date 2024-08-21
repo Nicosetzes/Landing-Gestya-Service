@@ -1642,7 +1642,7 @@ select {
 }
 @media only screen and (min-width: 1200px) {
   .main .main__M6 .M6__content-header .header__block {
-    max-width: 900px;
+    max-width: 1300px;
   }
 }
 .main .main__M6 .M6__content-header .header__block h2 {
@@ -1691,7 +1691,7 @@ select {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 7.5rem 1.5rem 0 1.5rem;
+  padding: 7.5rem 1.5rem;
 }
 @media only screen and (min-width: 992px) {
   .main .main__M7 .M7__content-header {
