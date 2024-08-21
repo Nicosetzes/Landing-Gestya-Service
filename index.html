@@ -625,34 +625,32 @@
           />
         </svg>
         <form action="#" method="post">
-          <div class="form__row">
-            <script>
-              function wfa_pstMesgFrmFom(evt) {
-                if (
-                  evt.origin === "https://crm.zoho.com" ||
-                  evt.origin === "https://crm.zohopublic.com"
-                ) {
-                  var loc_obj = JSON.stringify({
-                    origin: window.location.origin,
-                    pathname: window.location.pathname,
-                    search: window.location.search,
-                    hash: window.location.hash,
-                  });
-                  evt.source.postMessage(
-                    "prnt_wnd_pg_lc_rc_frm_prwindow_" + loc_obj,
-                    evt.origin
-                  );
-                }
+          <script>
+            function wfa_pstMesgFrmFom(evt) {
+              if (
+                evt.origin === "https://crm.zoho.com" ||
+                evt.origin === "https://crm.zohopublic.com"
+              ) {
+                var loc_obj = JSON.stringify({
+                  origin: window.location.origin,
+                  pathname: window.location.pathname,
+                  search: window.location.search,
+                  hash: window.location.hash,
+                });
+                evt.source.postMessage(
+                  "prnt_wnd_pg_lc_rc_frm_prwindow_" + loc_obj,
+                  evt.origin
+                );
               }
-              window.addEventListener("message", wfa_pstMesgFrmFom, false);
-            </script>
+            }
+            window.addEventListener("message", wfa_pstMesgFrmFom, false);
+          </script>
 
-            <iframe
-              width="610px"
-              height="560px"
-              src="https://crm.zoho.com/crm/WebFormServeServlet?rid=7023dc7de9ce43789ba059ff4aae07d4aadaaae2d034de131ab6cba2190c131e5422b4f517b17b3701f032bfecdffc8egid4fd099e0cf70b6484d6d7410a3115e93c1d557893ec2b0f42fc28a9210b6b873"
-            ></iframe>
-          </div>
+          <iframe
+            width="610px"
+            height="560px"
+            src="https://crm.zoho.com/crm/WebFormServeServlet?rid=7023dc7de9ce43789ba059ff4aae07d4aadaaae2d034de131ab6cba2190c131e5422b4f517b17b3701f032bfecdffc8egid4fd099e0cf70b6484d6d7410a3115e93c1d557893ec2b0f42fc28a9210b6b873"
+          ></iframe>
 
           <div class="form__footer">
             <p>Asesoramiento</p>

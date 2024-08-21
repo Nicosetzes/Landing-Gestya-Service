@@ -575,7 +575,7 @@ select {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 7.5rem 1.5rem;
+  padding: 7.5rem 1.5rem 0 1.5rem;
 }
 @media only screen and (min-width: 992px) {
   .main .main__M1 .M1__article-integration .integration__content-main {
@@ -630,7 +630,7 @@ select {
   }
 }
 .main .main__M1 .M1__article-integration .integration__content-main .main__block h2 {
-  margin: 0 0 1rem 0;
+  margin: 1rem 0;
 }
 .main .main__M1 .M1__article-integration .integration__content-main .main__block > img {
   margin: 0 0 0.75rem 0;
@@ -1810,112 +1810,8 @@ select {
     max-width: 675px;
   }
 }
-.main .main__M8 form .form__row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 75%;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 0 0 1rem 0;
-    padding: 0 3rem;
-    width: 100%;
-  }
-}
-.main .main__M8 form .form__row:nth-of-type(1), .main .main__M8 form .form__row:nth-of-type(2) {
-  /* Primera y segunda fila del formulario */
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__row:nth-of-type(1) label:last-child, .main .main__M8 form .form__row:nth-of-type(2) label:last-child {
-    margin: 0;
-  }
-}
-.main .main__M8 form .form__row:nth-of-type(3) {
-  /* Tercera fila del formulario */
-  margin: 0 0 2.5rem 0;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__row:nth-of-type(3) {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    margin: 1rem 0 2.5rem 0;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__row:nth-of-type(3) label:first-child {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    width: 25%;
-  }
-}
-.main .main__M8 form .form__row:nth-of-type(3) label:last-child {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  margin: 0;
-}
-.main .main__M8 form .form__row label {
-  color: #312780;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__row label {
-    margin: 0 1rem 0 0;
-    width: 50%;
-  }
-}
-.main .main__M8 form .form__row input,
-.main .main__M8 form .form__row select {
-  border: #efefef 2px solid;
-  border-radius: 0.5rem;
-  height: 35px;
-  margin: 0.5rem 0 0 0;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__row input,
-  .main .main__M8 form .form__row select {
-    margin: 0.5rem 0 0 0;
-  }
-}
-.main .main__M8 form .form__row button {
-  background-color: #ec8c1f;
-  border: 0;
-  border-radius: 0.25rem;
-  color: #fff;
-  font-weight: 700;
-  margin: 0 auto 2.5rem 0;
-  max-width: 375px;
-  padding: 0.5em 1.75em;
+.main .main__M8 form iframe {
   width: 100%;
-}
-.main .main__M8 form .form__row button:hover {
-  background-color: #004f7b;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__row button {
-    margin: 0 0 0 auto;
-    max-width: 225px;
-  }
 }
 .main .main__M8 form .form__footer {
   -webkit-box-align: center;
