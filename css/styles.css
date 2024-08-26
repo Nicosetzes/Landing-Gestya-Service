@@ -1962,7 +1962,7 @@ footer .footer__social img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 500px;
+  max-width: 450px;
 }
 .gracias .gracias__M1 .M1__content-header h2 {
   color: #312780;
