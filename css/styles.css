@@ -1775,87 +1775,6 @@ select {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-.main .main__M8 form,
-.main .main__M8 .M8__content-footer {
-  max-width: 500px;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form,
-  .main .main__M8 .M8__content-footer {
-    max-width: none;
-  }
-}
-.main .main__M8 form {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
-  border: 0;
-  border-radius: 0.75rem 0.75rem 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 3rem 0 0 0;
-  width: 100%;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    max-width: 675px;
-  }
-}
-.main .main__M8 form iframe {
-  width: 100%;
-}
-.main .main__M8 form .form__footer {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #312780;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1.5rem 0.75rem;
-  width: 100%;
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 0 0.75rem;
-  }
-}
-.main .main__M8 form .form__footer p:first-of-type {
-  font-weight: 700;
-}
-.main .main__M8 form .form__footer > svg {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-@media only screen and (min-width: 992px) {
-  .main .main__M8 form .form__footer > svg {
-    margin: 0 1rem;
-    -webkit-transform: none;
-            transform: none;
-    width: 2px;
-  }
-}
 
 footer {
   -webkit-box-align: center;
@@ -1869,7 +1788,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 7.5rem 0;
+  padding: 0 0 7.5rem 0;
 }
 footer p {
   color: #fff;

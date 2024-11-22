@@ -22,11 +22,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/carousel.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- Inicio Zoho SalesIQ -->
     <script
-      id="formScript5851273000002740123"
-      src="https://crm.zoho.com/crm/WebFormServeServlet?rid=7023dc7de9ce43789ba059ff4aae07d4aadaaae2d034de131ab6cba2190c131e5422b4f517b17b3701f032bfecdffc8egid4fd099e0cf70b6484d6d7410a3115e93c1d557893ec2b0f42fc28a9210b6b873&script=$sYG"
+      type="text/javascript"
+      src="https://forms.zoho.com/js/zf_gclid.js"
     ></script>
+    <!-- Fin Zoho SalesIQ -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -624,55 +626,13 @@
             fill="#EC8C1F"
           />
         </svg>
-        <form action="#" method="post">
-          <script>
-            function wfa_pstMesgFrmFom(evt) {
-              if (
-                evt.origin === "https://crm.zoho.com" ||
-                evt.origin === "https://crm.zohopublic.com"
-              ) {
-                var loc_obj = JSON.stringify({
-                  origin: window.location.origin,
-                  pathname: window.location.pathname,
-                  search: window.location.search,
-                  hash: window.location.hash,
-                });
-                evt.source.postMessage(
-                  "prnt_wnd_pg_lc_rc_frm_prwindow_" + loc_obj,
-                  evt.origin
-                );
-              }
-            }
-            window.addEventListener("message", wfa_pstMesgFrmFom, false);
-          </script>
-
-          <iframe
-            width="610px"
-            height="560px"
-            src="https://crm.zoho.com/crm/WebFormServeServlet?rid=7023dc7de9ce43789ba059ff4aae07d4aadaaae2d034de131ab6cba2190c131e5422b4f517b17b3701f032bfecdffc8egid4fd099e0cf70b6484d6d7410a3115e93c1d557893ec2b0f42fc28a9210b6b873"
-          ></iframe>
-
-          <div class="form__footer">
-            <p>Asesoramiento</p>
-
-            <svg
-              width="4"
-              height="91"
-              viewBox="0 0 4 91"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M2 0.5C3.10457 0.5 4 1.39543 4 2.5L4 88.5C4 89.6046 3.10457 90.5 2 90.5C0.89543 90.5 0 89.6046 0 88.5L3.8147e-06 2.5C3.8147e-06 1.39543 0.895434 0.5 2 0.5Z"
-                fill="#EC8C1F"
-              />
-            </svg>
-
-            <p>Tel: 0800-333-GESTYA (4378)</p>
-          </div>
-        </form>
+        <iframe
+          aria-label="Servicios Oficiales"
+          frameborder="0"
+          allow="geolocation;"
+          style="min-height: 900px; width: 99%; border: none"
+          src="https://forms.zohopublic.com/gestya1/form/ServiciosOficialesv2/formperma/V94ks_L9KLf04tc9QkPGV1nvLC20b8ozT1E81_xKhVA"
+        ></iframe>
       </section>
     </div>
     <footer>
@@ -692,5 +652,187 @@
         </a>
       </div>
     </footer>
+    <!-- Inicio integración con Zoho SalesIQ  -->
+    <script type="text/javascript">
+      var $zoho = $zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {
+        widgetcode:
+          "siqa21399a0d97f1db98dbf8898fa61a180ce4641b3df99d34a13449997d7f1ec8d",
+        values: {},
+        ready: function () {},
+      };
+      var d = document;
+      s = d.createElement("script");
+      s.type = "text/javascript";
+      s.id = "zsiqscript";
+      s.defer = true;
+      s.src = "https://salesiq.zoho.com/widget";
+      var t = d.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(s, t);
+    </script>
+    <div id="zsiqwidget"></div>
+    <!-- Fin integración con Zoho SalesIQ -->
+
+    <!-- Inicio código de seguimiento UTM -->
+    <script type="text/javascript">
+      function ZFLead() {}
+      ZFLead.utmPValObj = ZFLead.utmPValObj || {};
+
+      ZFLead.utmPNameArr = new Array(
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_term",
+        "utm_content"
+      );
+
+      ZFLead.prototype.zfutm_getLeadVal = function (pName) {
+        var qStr = "";
+        try {
+          qStr = window.top.location.search.substring(1);
+        } catch (e) {
+          qStr = "";
+        }
+        var pNameTemp = pName + "=";
+        var pValue = "";
+        if (typeof qStr !== "undefined" && qStr !== null && qStr.length > 0) {
+          var begin = qStr.indexOf(pNameTemp);
+          if (begin != -1) {
+            begin = begin + pNameTemp.length;
+            end = qStr.indexOf("&", begin);
+            if (end == -1) {
+              end = qStr.length;
+            }
+            pValue = decodeURIComponent(qStr.substring(begin, end));
+          }
+        }
+        if (pValue == undefined || pValue == "") {
+          pValue = this.zfutm_gC(pName);
+        }
+        return pValue;
+      };
+
+      ZFLead.prototype.zfutm_sC = function (paramName, path, domain, secure) {
+        var value = ZFLead.utmPValObj[paramName];
+        if (typeof value !== "undefined" && value !== null) {
+          var cookieStr = paramName + "=" + encodeURIComponent(value);
+          var exdate = new Date();
+          exdate.setDate(exdate.getDate() + 7);
+          cookieStr += "; expires=" + exdate.toGMTString();
+          cookieStr += "; path=/";
+          if (domain) {
+            cookieStr += "; domain=" + encodeURIComponent(domain);
+          }
+          if (secure) {
+            cookieStr += "; secure";
+          }
+          document.cookie = cookieStr;
+        }
+      };
+
+      ZFLead.prototype.zfutm_ini = function () {
+        for (var i = 0; i < ZFLead.utmPNameArr.length; i++) {
+          var zf_pN = ZFLead.utmPNameArr[i];
+          var zf_pV = this.zfutm_getLeadVal(zf_pN);
+          if (typeof zf_pV !== "undefined" && zf_pV !== null) {
+            ZFLead.utmPValObj[zf_pN] = zf_pV;
+          }
+        }
+        for (var pkey in ZFLead.utmPValObj) {
+          this.zfutm_sC(pkey);
+        }
+      };
+      ZFLead.prototype.zfutm_gC = function (cookieName) {
+        var cookieArr = document.cookie.split("; ");
+        for (var i = 0; i < cookieArr.length; i++) {
+          var cookieVals = cookieArr[i].split("=");
+          if (cookieVals[0] === cookieName && cookieVals[1]) {
+            return decodeURIComponent(cookieVals[1]);
+          }
+        }
+      };
+      ZFLead.prototype.zfutm_gC_enc = function (cookieName) {
+        var cookieArr = document.cookie.split("; ");
+        for (var i = 0; i < cookieArr.length; i++) {
+          var cookieVals = cookieArr[i].split("=");
+          if (cookieVals[0] === cookieName && cookieVals[1]) {
+            return cookieVals[1];
+          }
+        }
+      };
+      ZFLead.prototype.zfutm_iframeSprt = function () {
+        var zf_frame = document.getElementsByTagName("iframe");
+        for (var i = 0; i < zf_frame.length; ++i) {
+          if (zf_frame[i].src.indexOf("formperma") > 0) {
+            var zf_src = zf_frame[i].src;
+            for (var prmIdx = 0; prmIdx < ZFLead.utmPNameArr.length; prmIdx++) {
+              var utmPm = ZFLead.utmPNameArr[prmIdx];
+              var utmVal = this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);
+              if (typeof utmVal !== "undefined") {
+                if (zf_src.indexOf("?") > 0) {
+                  zf_src = zf_src + "&" + utmPm + "=" + utmVal;
+                } else {
+                  zf_src = zf_src + "?" + utmPm + "=" + utmVal;
+                }
+              }
+            }
+            if (zf_frame[i].src.length < zf_src.length) {
+              zf_frame[i].src = zf_src;
+            }
+          }
+        }
+      };
+      ZFLead.prototype.zfutm_DHtmlSprt = function () {
+        var zf_formsArr = document.forms;
+        for (var frmInd = 0; frmInd < zf_formsArr.length; frmInd++) {
+          var zf_form_act = zf_formsArr[frmInd].action;
+          if (zf_form_act && zf_form_act.indexOf("formperma") > 0) {
+            for (var prmIdx = 0; prmIdx < ZFLead.utmPNameArr.length; prmIdx++) {
+              var utmPm = ZFLead.utmPNameArr[prmIdx];
+              var utmVal = this.zfutm_gC(ZFLead.utmPNameArr[prmIdx]);
+              if (typeof utmVal !== "undefined") {
+                var fieldObj = zf_formsArr[frmInd][utmPm];
+                if (fieldObj) {
+                  fieldObj.value = utmVal;
+                }
+              }
+            }
+          }
+        }
+      };
+      ZFLead.prototype.zfutm_jsEmbedSprt = function (id) {
+        document.getElementById("zforms_iframe_id").removeAttribute("onload");
+        var jsEmbdFrm = document.getElementById("zforms_iframe_id");
+        var embdSrc = jsEmbdFrm.src;
+        for (var prmIdx = 0; prmIdx < ZFLead.utmPNameArr.length; prmIdx++) {
+          var utmPm = ZFLead.utmPNameArr[prmIdx];
+          var utmVal = this.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);
+          if (typeof utmVal !== "undefined") {
+            if (embdSrc.indexOf("?") > 0) {
+              embdSrc = embdSrc + "&" + utmPm + "=" + utmVal;
+            } else {
+              embdSrc = embdSrc + "?" + utmPm + "=" + utmVal;
+            }
+          }
+        }
+        jsEmbdFrm.src = embdSrc;
+      };
+      var zfutm_zfLead = new ZFLead();
+      zfutm_zfLead.zfutm_ini();
+      if (document.readyState == "complete") {
+        zfutm_zfLead.zfutm_iframeSprt();
+        zfutm_zfLead.zfutm_DHtmlSprt();
+      } else {
+        window.addEventListener(
+          "load",
+          function () {
+            zfutm_zfLead.zfutm_iframeSprt();
+            zfutm_zfLead.zfutm_DHtmlSprt();
+          },
+          false
+        );
+      }
+    </script>
+    <!-- Fin código de seguimiento UTM -->
   </body>
 </html>
